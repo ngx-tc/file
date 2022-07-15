@@ -2,6 +2,7 @@
 @import '~@ngx-tc/base/src/assets/scss/base.scss';
 
 $_types: ('primary', 'accent', 'success', 'info', 'warning', 'error');
+
 @keyframes rotation {
   from {
     transform: rotate(0deg);
