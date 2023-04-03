@@ -1,24 +1,37 @@
-# File
+# About
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.5.
+@ngx-tc/file is an Angular library that provides developers with a simple way to show and manage files in their applications. The library is designed to be flexible and customizable, allowing developers to quickly and easily integrate file upload functionality into their applications.
 
-## Code scaffolding
+The library includes a number of pre-built components that can be used to create file upload forms, display uploaded files, and manage file metadata. These components are fully customizable, allowing developers to modify the appearance and behavior of each component to fit their specific needs.
 
-Run `ng generate component component-name --project file` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project file`.
-> Note: Don't forget to add `--project file` or else it will be added to the default project in your `angular.json` file. 
+The @ngx-tc/file library is built using Angular and is designed to be lightweight and easy to use. Minimal setup is required to get started, and the library can be easily integrated into existing Angular projects.
 
-## Build
+## Usage
 
-Run `ng build file` to build the project. The build artifacts will be stored in the `dist/` directory.
+Install `@ngx-tc/file` in your project:
 
-## Publishing
+```
+npm install @ngx-tc/file
+```
 
-After building your library with `ng build file`, go to the dist folder `cd dist/file` and run `npm publish`.
+Import `TcFileModule` e.g. in your `app.module.ts`:
+```typescript
+import { TcFileModule } from '@ngx-tc/file';
 
-## Running unit tests
+@NgModule({
+  imports: [
+    ...
+    TcFileModule
+  ],
+})
+export class AppModule {}
+```
 
-Run `ng test file` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Use the `tc-file` component in you app:
+```html
+<tc-file [type]="'file-type'" [title]="'file-name'"></tc-file>
+```
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Demo
+To view a working demo of the library in action, please follow the provided link. The demo will allow you to explore the various components and features included in this library and see how they can be used in your Angular applications.
+[http://tc-library.type-code.pro/#/components/files](http://tc-library.type-code.pro/#/components/files)
