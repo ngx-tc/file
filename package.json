@@ -1,18 +1,19 @@
 {
   "name": "@ngx-tc/file",
-  "version": "0.0.7",
+  "version": "1.0.0",
   "author": "type0code",
   "license": "MIT",
-  "description": "Angular UI components library",
+  "description": "Angular library for easy file show and management in applications.",
   "keywords": ["angular", "angular UI", "angular components", "ng", "ngx", "angular form", "angular control", "angular file"],
   "repository": "https://github.com/ngx-tc/file",
+  "homepage": "http://tc-library.type-code.pro/#/components/files",
   "config": {
     "access": "public"
   },
   "peerDependencies": {
     "@angular/common": "^15.1.5",
     "@angular/core": "^15.1.5",
-    "@ngx-tc/base": "^0.0.17"
+    "@ngx-tc/base": "1.0.1"
   },
   "dependencies": {
     "tslib": "^2.5.0"

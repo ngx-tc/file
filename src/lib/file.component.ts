@@ -1,6 +1,6 @@
 import { Component, EventEmitter, HostBinding, Input, Output } from '@angular/core';
 
-import { view, size, TcView, TcSize } from '@ngx-tc/base';
+import { view, size, TcView, TcSize, View, Size } from '@ngx-tc/base';
 
 @Component({
   selector: 'tc-file',
@@ -10,8 +10,8 @@ import { view, size, TcView, TcSize } from '@ngx-tc/base';
 export class FileComponent implements TcView, TcSize {
   @Input() title: string = 'file name';
   @Input() type: string = '*';
-  @Input('view') tcView: string | view = view.primary;
-  @Input('size') tcSize: string | size = size.default;
+  @Input('view') tcView: View = view.primary;
+  @Input('size') tcSize: Size = size.default;
   @Input() icon: string;
   @Input() image: string;
   @Input() delete: boolean;
