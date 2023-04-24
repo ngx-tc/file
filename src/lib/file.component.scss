@@ -75,20 +75,16 @@ $_types: ('primary', 'accent', 'success', 'info', 'warning', 'error');
       border: 0;
       color: inherit;
       cursor: pointer;
+      inset-inline-end: 0;
       line-height: 0;
       outline: none;
       padding: 0;
       position: absolute;
-      right: 0;
       top: 0;
       transition: color .2s var(--tc-file-transition);
 
       svg {
         fill: currentColor;
-      }
-      .rtl & {
-        left: 0;
-        right: auto;
       }
       &:hover {
         color: var(--tc-color-error, #f00);
